@@ -1,6 +1,6 @@
 ### Links
 
-- Solution URL: [click here](https://github.com/weldu0/Frontend-Mentor-Challenges-Collection/qr-code-component-main)
+- Solution URL: [click here](https://github.com/weldu0/Frontend-Mentor-Challenges-Collection/tree/main/qr-code-component-main)
 
 - Live Site URL: [click here](https://weldu0.github.io/Frontend-Mentor-Challenges-Collection/qr-code-component-main)
 
