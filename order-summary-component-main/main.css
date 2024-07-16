@@ -95,6 +95,9 @@ body {
 
 .price-container a {
   justify-self: end;
+  color: var(--bright-blue);
+  font-weight: 500;
+
 }
 button {
   border: none;
