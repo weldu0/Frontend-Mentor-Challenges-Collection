@@ -68,7 +68,7 @@ body {
 }
 
 .bg-color::before {
-content: 'hello';
+content: '';
 position: absolute;
 color: red;
 top: 0;
@@ -79,9 +79,6 @@ border-radius: 10px 10px 0 0;
 max-width: 100%;
 height: 100%;
 }
-
-
-
 
 .sub-container h1 {
   color: var(--white);
@@ -159,7 +156,7 @@ height: 100%;
 
  .container .imgs-container {
       order: 2; 
-      position: relative;
+      position: relaztive;
   }
 
 
@@ -181,8 +178,7 @@ height: 100%;
     text-align: start;
     padding-left: 60px;
     align-items: start;
-
-
+    
   }
   .sub-container h1{
     text-align: start;
