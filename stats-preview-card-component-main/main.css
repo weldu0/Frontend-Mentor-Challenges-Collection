@@ -68,7 +68,7 @@ body {
 }
 
 .bg-color::before {
-content: 'hello';
+content: '';
 position: absolute;
 color: red;
 top: 0;
