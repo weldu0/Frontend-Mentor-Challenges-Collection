@@ -1,0 +1,61 @@
+:root {
+  --very-dark-blue: hsl(243, 87%, 12%);
+  --desaturated-blue: hsl(238, 22%, 44%);
+  
+  --bright-blue: hsl(224, 93%, 58%);
+  --boderate-cyan: hsl(170, 45%, 43%);
+
+  --light-grayish-blue: hsl(240, 75%, 98%);
+  --light-gray: hsl(0, 0%, 75%);
+}
+
+body {
+  font-family: Open Sans;
+  background-color: var(--light);
+}
+
+/* header */
+header, nav, button {
+  font-family: Raleway;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  margin-bottom: 80px;
+}
+
+.brand img {
+  width: 105px;
+}
+
+.header-nav a {
+  color: var(--very-dark-blue);
+  font-size: 20px;
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+.header-nav :nth-child(1) {
+  padding-left: 0;
+}
+
+
+/* main */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px;
+}
+
+img {
+  width: 100%;
+}
+
+.intro {
+  text-align: center;
+}
