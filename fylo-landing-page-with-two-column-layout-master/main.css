@@ -11,7 +11,8 @@
 
 body {
   font-family: Open Sans;
-  background-color: var(--light);
+  padding: 0;
+  margin: 0;
 }
 
 /* header */
@@ -49,13 +50,252 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 40px;
+
+
 }
 
 img {
   width: 100%;
 }
 
-.intro {
+#stay-productive {
+  background-color: #F8F8FE;
+  width: 100%;
+}
+.how-productive {
+  margin: 40px;
+}
+
+#anywhere {
   text-align: center;
+  color: var(--very-dark-blue);
+  margin-bottom: 18px;
+}
+
+#anywhere div img {
+  margin-bottom: 20px
+}
+
+.secure {
+  margin: 40px;
+}
+
+.get-started {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: 40px
+
+}
+
+
+.error-message {
+  text-align: start;
+  font-size: 12px;
+  margin-top: 0;
+
+}
+
+button {
+  border: none;
+  background-color: var(--bright-blue);
+  color: var(--light-grayish-blue);
+  font-weight: 700;
+  font-size: 700;
+  font-size: 14px;
+}
+
+input {
+  border: 1px solid var(--very-dark-blue);
+}
+
+button,
+input {
+  border-radius: 4px;
+  padding: 15px;
+
+}
+
+.get-started button {
+  box-shadow: 4px 4px 8px rgba(211, 211, 211, 0.400);
+}
+
+.get-started input:user-invalid + span.error-message::before{
+  content: 'Please check your email';
+  color: rgba(221, 28, 28, 0.818);
+}
+
+.get-started button:hover {
+  opacity: 0.6;
+}
+
+#stay-productive {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#stay-productive img {
+  margin-bottom: 80px;
+}
+#stay-productive h2{
+  font-size: large;
+}
+#stay-productive p{
+  text-align: start;
+  color: var(--desaturated-blue);
+}
+#stay-productive a {
+  font-size: 14px;
+  color: var(--boderate-cyan);
+  text-decoration: none;
+  border-bottom: solid 2px var(--boderate-cyan);
+  padding-bottom: 4px;
+  background-image: url(./images/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 20px;
+  padding-right: 28px;
+}
+
+#stay-productive a:hover {
+  opacity: 0.6;
+}
+
+.testimonial q{
+  padding: 10px 0;
+  color: var(--very-dark-blue);
+  /* font-weight: 400; */
+}
+.testimonial q::before {
+  content: url(images/icon-quotes.svg);
+  display: block;
+  text-align: start;
+  padding-top: 0;
+  padding-bottom: 6px;
+  
+}
+.testimonial {
+  margin: 40px;
+
+  padding: 10px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  margin-top: 50px;
+  background-color: white;
+  box-shadow: 5px 5px 15px rgba(225, 225, 225, 0.53);
+  border-radius: 4px;
+  margin-bottom: 75px
+}
+.testimonial img{
+  width: 45px;
+  border-radius: 50%;
+  margin: 0 16px 0 0 !important;
+
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+.about .intitle p{
+  margin: 0;
+  padding: 0px;
+}
+.about .intitle :first-child{
+  font-family: Raleway;
+
+  font-size: 16px;
+  font-weight: bolder;
+}
+.about .intitle :last-child{
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+#join {
+  background-color: var(--desaturated-blue);
+  color: var(--light-grayish-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.join {
+  margin: 20px;;
+
+}
+
+
+
+.go-join {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 80%;
+  margin: 40px;
+
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--very-dark-blue);
+  padding: 60px 40px;
+  color: var(--desaturated-blue);
+  font-size: 18px
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+svg path{
+  fill: white;
+}
+footer img {
+  width: 25px;
+}
+
+.contact,
+.footer-nav,
+.legal nav {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  align-items: start;
+  vertical-align: middle;
+}
+.contact a,
+.footer-nav a,
+.legal nav a {
+  padding: 8px 0;
+  display: flex;
+}
+
+
+.contact .brand {
+  margin-bottom: 30px
+}
+
+.contact a img {
+  padding-right: 15px;
+}
+
+.soical-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center
+}
+
+.soical-nav a:nth-child(1):hover {
+  border: red;
 }
