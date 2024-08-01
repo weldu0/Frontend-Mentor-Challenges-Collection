@@ -34,31 +34,39 @@
       <img src="./images/illustration-1.svg" alt="">
     </div>
     <div class="secure">
-      <h1>All your files in one secure location, accessible anywhere.</h1>
-      <p>
-        Fylo stores your most important files in one secure location. 
-        Access them wherever you need, share and collaborate with friends, 
-        family, and co-workers.
-      </p>
+      <div>
+        <h1 class="heading">All your files in one secure location, accessible anywhere.</h1>
+        <p>
+          Fylo stores your most important files in one secure location. 
+          Access them wherever you need, share and collaborate with friends, 
+          family, and co-workers.
+        </p>
+      </div>
       <form class="get-started" method="post" >
-        <input id="get-started-email" type="email"  placeholder="Enter your email" required>
-        <span class="error-message"></span>
-        <button type="submit">Get Started</button>
+        <div class="input">
+          <input id="get-started-email" type="email"  placeholder="Enter your email" required>
+          <span class="error-message"></span>
+        </div>
+        <div>
+          <button type="submit">Get Started</button>
+        </div>
       </form>
     </div>
   </section>
 
   <section id="stay-productive">
-    <div>
-      <picture>
-        <source srcset="./images/bg-curve-mobile.svg" media="(min-width: 600px)">
-        <source srcset="./images/bg-curve-desktop.svg" media="(max-width: 601px)">
-        <img style="background-color: white;" src="./images/bg-curve-mobile.svg" alt="Curved background shape">
-      </picture>
+    <picture class="shape">
+      <source srcset="./images/bg-curve-mobile.svg" media="(min-width: 600px)">
+      <source srcset="./images/bg-curve-desktop.svg" media="(max-width: 601px)">
+      <img class="shape" aria-hidden="true" style="background-color: white;" src="./images/bg-curve-mobile.svg" alt="Curved background shape">
+    </picture>
+
+    <div class="illustration-2">
       <img src="./images/illustration-2.svg" alt="">
     </div>
+
     <div class="how-productive">
-      <h2>Stay productive, wherever you are</h2>
+      <h2 class="sub-heading">Stay productive, wherever you are</h2>
       <p>
         Never let location be an issue when accessing your files. Fylo has you 
         covered for all of your file storage needs.
@@ -68,25 +76,27 @@
         live collaboration. No email attachments required!
       </p>
       <a href="">See how Fylo works</a>
-    </div>
 
-    <div class="testimonial">
-      <q>
-        Fylo has improved our team productivity by an order of magnitude. Since 
-        making the switch our team has become a well-oiled collaboration machine.
-      </q>
-      <div class="about">
-        <img src="./images/avatar-testimonial.jpg" alt="">
-        <div class="intitle">
-          <p>Kyle Burton</p>
-          <p>Founder & CEO, Huddle</p>
+      <div class="testimonial">
+        <q>
+          Fylo has improved our team productivity by an order of magnitude. Since 
+          making the switch our team has become a well-oiled collaboration machine.
+        </q>
+        <div class="about">
+          <img src="./images/avatar-testimonial.jpg" alt="">
+          <div class="intitle">
+            <p>Kyle Burton</p>
+            <p>Founder & CEO, Huddle</p>
+          </div>
         </div>
       </div>
     </div>
+
+
   </section>
 
   <section id="join">
-      <div class="join">
+      <div>
         <h3>Get early access today</h3>
         <p>It only takes a minute to sign up and our free starter tier is extremely generous. 
           If you have any questions, our support team would be happy to help you.</p>
@@ -102,7 +112,6 @@
 
 
 
-</div>
 <footer class="footer">
   <div class="contact">
     <!-- Phone: +1-543-123-4567 -->
@@ -125,16 +134,13 @@
     <a href="">Blog</a>
   </nav>
 
-  <div class="legal">
-    <nav>
+    <nav class="legal-nav">
       <a href="">Contact Us</a>
       <a href="">Terms</a>
       <a href="">Privacy</a>
     </nav>
-  </div>
 
-  <div class="soical-nav">
-    <nav>
+    <nav class="soical-nav">
       <a href="">
         <i class="bi bi-facebook"></i>
       </a>
@@ -145,7 +151,6 @@
         <i class="bi bi-instagram"></i>
       </a>
     </nav>
-  </div>
 </footer>
 
 <script>

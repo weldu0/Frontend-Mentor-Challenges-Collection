@@ -15,8 +15,11 @@ body {
   margin: 0;
 }
 
-/* header */
 header, nav, button {
+  font-family: Raleway;
+}
+
+h1, h2 {
   font-family: Raleway;
 }
 
@@ -30,7 +33,7 @@ header {
 }
 
 .brand img {
-  width: 105px;
+  /* width: 105px; */
 }
 
 .header-nav a {
@@ -45,7 +48,6 @@ header {
 }
 
 
-/* main */
 .container {
   display: flex;
   flex-direction: column;
@@ -55,7 +57,7 @@ header {
 }
 
 img {
-  width: 100%;
+  width: 80%;
 }
 
 #stay-productive {
@@ -103,6 +105,7 @@ button {
   font-weight: 700;
   font-size: 700;
   font-size: 14px;
+  cursor: pointer;
 }
 
 input {
@@ -165,7 +168,6 @@ input {
 .testimonial q{
   padding: 10px 0;
   color: var(--very-dark-blue);
-  /* font-weight: 400; */
 }
 .testimonial q::before {
   content: url(images/icon-quotes.svg);
@@ -207,11 +209,12 @@ input {
   margin: 0;
   padding: 0px;
 }
-.about .intitle :first-child{
-  font-family: Raleway;
+.about .intitle :first-child {
 
+  font-family: Raleway;
   font-size: 16px;
   font-weight: bolder;
+  color: red;
 }
 .about .intitle :last-child{
   font-size: 12px;
@@ -243,6 +246,13 @@ input {
   margin: 40px;
 
 }
+
+.go-join input:user-invalid + span.error-messagex::before{
+  content: 'Please check your email';
+  color: hsl(240, 75%, 98%);
+}
+
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -266,7 +276,7 @@ footer img {
 
 .contact,
 .footer-nav,
-.legal nav {
+.legal-nav {
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
@@ -275,11 +285,15 @@ footer img {
 }
 .contact a,
 .footer-nav a,
-.legal nav a {
+.legal-nav a {
   padding: 8px 0;
   display: flex;
 }
-
+.contact a:hover,
+.footer-nav a:hover,
+.legal-nav a:hover{
+  color: var(--bright-blue)
+}
 
 .contact .brand {
   margin-bottom: 30px
@@ -296,6 +310,151 @@ footer img {
   align-items: center
 }
 
-.soical-nav a:nth-child(1):hover {
-  border: red;
+
+.soical-nav a {
+  padding: 5px;
+}
+
+.soical-nav a i {
+  color: var(--light-grayish-blue);
+  border: solid 1px white;
+  padding: 8px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.soical-nav a i:hover {
+  color: var(--bright-blue);
+  border-color: var(--bright-blue);
+  
+}
+
+@media only screen and (min-width: 56.25em) {
+  #anywhere,
+  #stay-productive {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  #anywhere {
+    margin-bottom: 180px;
+    align-items: center;
+    text-align: start;
+  }
+
+  .secure {
+    width: 700px;
+  }
+
+  
+  .secure .heading {
+    font-size: 2rem;
+    align-items: start;
+  }
+  
+  .get-started {
+    display: flex;
+    
+    flex-direction: row;
+    gap: 10px;
+    
+  }
+  .get-started input {
+    width: 250px;
+    
+  }
+  .get-started button {
+    padding-right: 50px;
+    padding-left: 50px;
+    
+  }
+  .get-started .input {
+    display: flex;
+    flex-direction: column
+    
+  }
+  
+
+  #stay-productive {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+  .how-productive {
+    grid-row: 2;
+  }
+  .illustration-2 {
+    grid-row: 2;
+    grid-column: 2;
+  }
+  .shape {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    width: 100%;
+  }
+  #stay-productive img {
+    margin-bottom:0;
+}
+
+.illustration-2 {
+  width: 80%;
+}
+
+.how-productive {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+
+.sub-heading {
+  font-size: 2.4rem !important;
+  text-align: start;
+  margin: 0;
+}
+.testimonial {
+  max-width : 330px;
+}
+
+#join {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: start;
+  padding: 6em;
+}
+
+#join h3 {
+  font-size: 2em;
+}
+#join p {
+  font-size: 1.2em;
+}
+
+.go-join button{
+  width: 50%;
+  margin-top: 8px;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items:flex-start;
+  padding: 6em;
+}
+
+.footer-nav,
+.legal-nav,
+.soical-nav {
+  padding-top: 100px;
+}
+
+}
+
+
+
+.get-started div{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+
 }
