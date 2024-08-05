@@ -1,51 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="stylesheet" href="main.css">
+  <title>Frontend Mentor | Chat app CSS illustration</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
   </style>
 </head>
+
 <body>
 
-  Samuel Green
-  Available to Walk
+  <div class="bg-left"></div>
+  <div class="bg-right"></div>
+  <main class="app">
+    <section class="app-preview">
+        <div class="phone">
+          <div class="profile">
+            <div class="top-blank-canv"></div>
+    
+            <div class="about-user">
+              <nav>
+                <a href="">
+                  <i class="arrow back">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="12.5"
+                      viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <title>Go Back</title>
+                    <path fill="#FFD43B"
+                    d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+                    </svg>
+                  </i>
+                </a>
+              </nav>
+              <img src="./assets/images/avatar.jpg" alt="">
+              <div class="user-is">
+                <p class="name">Samuel Green</p>
+                <p>Available to Walk</p>
+              </div>
+            </div>
+            <div class="three-dot">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+              <circle cx="12" cy="12" r="1"></circle>
+              <circle cx="12" cy="5" r="1"></circle>
+              <circle cx="12" cy="19" r="1"></circle>
+              <title>Menu push button</title>
+              </svg>
+            </div>
+          </div>
+    
+          <article class="chat">
+            <div class="message left">
+              <p>That sounds great. I’d be happy with that.</p>
+            </div>
+            <div class="message left">
+              <p>Could you send over some pictures of your dog, please?</p>
+            </div>
+            <div class="right img-right">
+              <img src="./assets/images/dog-image-1.jpg" alt="">
+              <img src="./assets/images/dog-image-2.jpg" alt="">
+              <img src="./assets/images/dog-image-3.jpg" alt="">
+            </div>
+            <div class="message right">
+              <p> Here are a few pictures. She’s a happy girl!</p>
+            </div>    
+    
+            <div class="message right">
+              <p>Can you make it?</p>
+            </div>
+            <div class="message left">
+              <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+            </div>
 
-  That sounds great. I’d be happy with that.
+            
+            <div class="message-offer left">
 
-  Could you send over some pictures of your dog, please?
+              <div class="offer">
+                <div class="minute">
+                  <div class="select"></div>
+                  <div>30 minute walk</div>
+                </div>
+                <div class="price">
+                  $29
+                </div>
+              </div>
+              <div class="offer">
+                <div class="minute">
+                  <div class="select"></div>
+                  <div>1 hour walk</div>
+                </div>
+                <div class="price">
+                  $49
+                </div>
+              </div>
+            </div>
 
-  Here are a few pictures. She’s a happy girl!
 
-  Can you make it?
 
-  She looks so happy! The time we discussed works. How long shall I take her out for?
+            <div class="input">
+              <input class="type-message" type="text" name="send message" placeholder="Type a message…">
+              <svg xmlns="http://www.w3.org/2000/svg" 
+                viewBox="0 0 320 512">
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License
+                - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+                              
+            </div>
+          </article>
 
-  30 minute walk
-  $29
+        </div>
+      </section>
 
-  1 hour walk
-  $49
-
-  Type a message…
-
-  Simple booking
-
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-  discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.
+      <section class="simple-booking">
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <h1>Simple booking</h1>
+        <p>
+          Stay in touch with our dog walkers through the chat interface. This makes it easy to
+          discuss arrangements and make bookings. Once the walk has been completed you can rate
+          your walker and book again all through the chat.
+        </p>
+      </section>
+    </main>
+
+
+
+
+
+
+
+
 </body>
+
 </html>

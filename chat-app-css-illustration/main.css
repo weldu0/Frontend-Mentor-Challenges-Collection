@@ -1,0 +1,438 @@
+:root {
+/* #### Text */
+--pale-violet: hsl(276, 100%, 81%);
+--moderate-violet-chat-left: hsl(276, 55%, 52%);
+--desaturated-dark-violet-chat-right: hsl(271, 15%, 43%);
+--grayish-blue-placeholder-text: hsl(206, 6%, 79%);
+--very-dark-desaturated-violet: hsl(271, 36%, 24%);
+--dark-grayish-violet-p: hsl(270, 7%, 64%);
+
+/* #### gradients */
+
+--light-magenta: hsl(293, 100%, 63%);
+--light-violet: hsl(264, 100%, 61%);
+
+/* ### Secondary */
+
+--white: hsl(0, 0%, 100%);
+--light-grayish-violet-bg: hsl(270, 20%, 96%);
+--very-dark-desaturated-violet: hsl(271, 36%, 24%);
+--very-light-magenta: hsl(289, 100%, 72%);
+
+}
+
+body {
+  font-family: Rubik;
+  font-size: 1em;
+  background-color: hsl(0, 0%, 98.04%);
+  margin: 0;
+  /* padding: 20px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-x:hidden;
+  
+}
+
+.app {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px; 
+
+}
+
+.phone {
+  border-radius: 40px 40px 40px 40px;
+  background-color: var(--light-grayish-violet-bg);
+  /* display: none; */
+}
+.app-preview {
+  background-color: white;
+  padding: 10px;
+  border-radius: 40px 40px 40px 40px;
+  min-width: 280px;
+  position: relative;
+  box-shadow: 10px 15px 35px hsla(206, 7%, 79%, 0.634);
+  
+}
+
+
+.profile {
+  padding: 10px 10px 10px 10px;
+  border-radius: 30px 30px 4px 4px;
+  background: linear-gradient( to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* box-shadow: 5px 5px 10px var(--grayish-blue-placeholder-text); */
+}
+
+
+.arrow > svg{
+  width: 1em;
+  height: 1em;
+  padding-right: 5px;
+  background-color: transparent; 
+}
+.arrow > svg path{
+  fill: white;
+
+}
+
+
+.top-blank-canv {
+  background-color: white;
+  width: 50%;
+  height: 30px;
+  /* border: solid; */
+  position: absolute;
+  top: 0px;
+  left: 25%;
+  border-radius: 40px;
+}
+.about-user{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+ 
+}
+
+
+.about-user img {
+  width: 35px;
+  border: 1.5px solid white;
+  border-radius: 50%;
+}
+.user-is p{
+  padding: 0 0 0 10px;
+  margin: 0;
+}
+
+.user-is .name {
+  color: white;
+  font-weight: 500;
+  font-size: 1em;
+}
+.user-is:last-child {
+  font-size: 0.7em;
+  color: var(--pale-violet)
+}
+
+
+.three-dot {
+  align-self: flex-end;
+}
+.three-dot > svg{
+  width: 1em;
+  color: white;
+}
+
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 10px 15px;
+  font-size: 10px;
+}
+
+.message {
+  padding: 1px 8px;
+  margin-bottom: 10px;
+  max-width: 140px;
+  width: auto;
+
+ 
+}
+
+
+.left {
+  color: var(--moderate-violet-chat-left);
+  border-radius: 15px 10px 10px 2px;
+  background-color: hsla(268, 100%, 88%, 0.333);
+  align-self: start;
+  text-align: start;
+}
+
+.right {
+  background-color: white;
+  color: var(--desaturated-dark-violet-chat-right);
+  align-self: flex-end;
+  text-align:start;
+  margin-bottom: 10px;
+  border-radius: 15px 10px 0 10px;
+}
+
+.img-right{
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  
+}
+.img-right img{
+  width: 50px;
+  border-radius: 15px;
+  background-color: transparent;
+  margin-left: 10px
+}
+
+.message-offer {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.offer {
+  width: 180px;
+  background: linear-gradient( to left, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  color: white;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1em;
+  padding: 10px 0px 10px 10px;
+  border-radius: 15px 10px 10px 4px;
+  text-wrap: nowrap;
+
+  
+  
+}
+.minute,
+.price {
+  text-align: center;
+  flex: 1;
+}
+
+.select {
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--pale-violet);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.minute {
+  display: flex;
+}
+
+.price {
+  font-size: large;
+  font-weight: 700;
+}
+
+
+.input {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px 10px 10px;
+  border-radius: 50px;
+  align-self: center;
+  width: 92%;
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+
+.type-message {
+  border: none;
+  outline: none;
+
+}
+.input svg{
+  width: 10px;
+  height: 10px;
+  background-color: var(--very-dark-desaturated-violet);
+  padding: 12px;
+  border-radius: 50%;
+  rotate: 180deg;
+}
+.input svg{
+  fill: white;
+  width: 10px;
+}
+
+/*  */
+.simple-booking {
+  z-index: 1;
+  max-width: 28em;
+  text-align: start;
+}
+.simple-booking h1{
+  font-size: 2em;
+  color: var(--very-dark-desaturated-violet);
+  font-weight: 600;
+  padding: 0;
+  margin-top: 2em;
+  margin-bottom: 0;
+
+
+}
+.simple-booking p{
+  font-size: 1em;
+  color: var(--dark-grayish-violet-p);
+  line-height: 1.6;
+}
+
+/* .message,
+.img-right {
+  animation-name: moveChatUp;
+  animation-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+} */
+.offer {
+  animation-name: offer;
+  animation-duration: 0s;
+  transition-timing-function: ease-in-out;
+}
+
+@keyframes offer {
+  0% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+  opacity: 0.5;
+  transform: translateX(0);
+  }
+}
+
+@keyframes moveChatUp  {
+  0% {
+      opacity: 0;
+      transform: translateY(0);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.message:nth-child(1){
+  animation-name: moveChatUp;
+  animation-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+.message:nth-child(2){
+  animation-name: moveChatUp;
+  animation-duration: 2s;
+  transition-timing-function: ease-in-out;
+}
+.img-right:nth-child(1){
+  animation-name: moveChatUp;
+  animation-duration: 3s;
+  transition-timing-function: ease-in-out;
+}
+.img-right:nth-child(2){
+  animation-name: moveChatUp;
+  animation-duration: 4s;
+  transition-timing-function: ease-in-out;
+}
+.img-right:nth-child(3){
+  animation-name: moveChatUp;
+  animation-duration: 5s;
+  transition-timing-function: ease-in-out;
+}
+
+.message:nth-child(4){
+  animation-name: moveChatUp;
+  animation-duration: 6s;
+  transition-timing-function: ease-in-out;
+}
+.message:nth-child(5){
+  animation-name: moveChatUp;
+  animation-duration: 7s;
+  transition-timing-function: ease-in-out;
+}
+.message:nth-child(6){
+  animation-name: moveChatUp;
+  animation-duration: 8s;
+  transition-timing-function: ease-in-out;
+}
+.offer:nth-child(1){
+  animation-name: offer;
+  animation-duration: 3s;
+  transition-timing-function: ease-in-out;
+}
+.offer:nth-child(2){
+  animation-name: offer;
+  animation-duration: 4s;
+  transition-timing-function: ease-in-out;
+}
+
+
+/*  */
+
+.bg-left {
+  width: 40%;
+  height: 80%;
+  background: linear-gradient( to top, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  position: absolute;
+  top: 0;
+  left: -12%;
+  border-radius: 0% 0% 60% 60% / 0% 0% 90% 90%;
+
+}
+.bg-right {
+  width: 40%;
+  height: 80%;
+  background-color: hsla(270, 20%, 96%, 0.456);
+  position: absolute;
+  bottom: 0;
+  right: -12%;
+  border-radius: 48% 52% 0% 0% / 40% 40% 0% 0%;
+
+
+}
+
+
+@media screen and (max-width: 60em) {
+
+  .app {
+    flex-direction: column;
+    margin-top: 20em;
+  }
+  .simple-booking {
+    margin: 0;
+    max-width: 19.375em;
+    text-align: center;
+  }
+  .simple-booking h1 {
+    margin-top: -40px;
+
+  }
+
+
+.bg-left {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient( to top, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  left: -200px;
+  border-radius: 0 0 800px 800px / 0 0 800px 800px;
+
+}
+.bg-right {
+  width: 400px;
+  height: 600px;
+  background-color: hsla(270, 20%, 96%, 0.456);
+  /* background-color:red; */
+  bottom: -300px;
+  right: -200px;
+  border-radius: 800px 800px 0 0 / 800px 800px 0 0;
+
+
+}
+
+}
