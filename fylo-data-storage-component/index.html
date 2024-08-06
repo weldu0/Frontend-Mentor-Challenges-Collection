@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">
+  <title>Frontend Mentor | Fylo data storage component</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
+</head>
+
+<body>
+
+  <picture>
+    <source media="(min-width: 40em)" srcset="./images/bg-desktop.png">
+    <source media="(max-width: 44.9em)" srcset="./images/bg-mobile.png">
+    <img class="bg-img" src="./images/bg-desktop.png" alt="">
+  </picture>
+
+  <div role="main" class="container">
+
+    <div class="data-type">
+      <div class="logo">
+        <img src="/images/logo.svg" alt="Fylo logo">
+      </div>
+      <div class="icon">
+        <i role="button" tabindex="0" aria-label="Open document" ><img src="./images/icon-document.svg" alt="document"></i>
+        <i role="button" tabindex="0" aria-label="Open folder" ><img src="./images/icon-folder.svg" alt="folder"></i>
+        <i role="button" tabindex="0" aria-label="Upload document" ><img src="./images/icon-upload.svg" alt="upload"></i>
+      </div>
+    </div>
+
+    <!-- <progress max="100" value="80"></progress> -->
+      <div class="used-data">
+        <p>You’ve used <span>815 GB</span> of your storage</p>
+        <div role="progressbar" aria-valuemax="100" aria-valuenow="80" class="progress">
+          <div class="completed">
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="progress-status">
+          <div>0 GB</div>
+          <div>1000 GB</div>
+        </div>
+        <div class="free-space">
+            <span>185</span> GB Left
+        </div>
+      </div>
+  </div>
+
+</body>
+</html>
