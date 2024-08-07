@@ -1,0 +1,83 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  height: 100vh;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2em;
+  margin-top: 28em;
+}
+
+.about-car {
+  max-width: 20em;
+  padding: 3em;
+}
+.about-car h2 {
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+  font-family: Big Shoulders Display;
+}
+.about-car p {
+  font-family: Lexend Deca;
+  color: hsla(0, 0%, 100%, 0.75);
+  max-width: 15em;
+}
+.about-car button {
+  padding: 1em;
+  border: none;
+  border-radius: 2em;
+  background-color: hsl(0, 0%, 95%);
+}
+.about-car button::before {
+  content: "Learn More";
+}
+
+.about-car:nth-child(1) {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 10px 0 0;
+}
+.about-car:nth-child(1) button {
+  color: hsl(31, 77%, 52%);
+}
+
+.about-car:nth-child(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+.about-car:nth-child(2) button {
+  color: hsl(184, 100%, 22%);
+}
+
+.about-car:nth-child(3) {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 10px 10px;
+}
+.about-car:nth-child(3) button {
+  color: hsl(179, 100%, 13%);
+}
+
+@media screen and (min-width: 30em) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 0;
+  }
+  .about-car:nth-child(1) {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+  }
+  .about-car:nth-child(3) {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

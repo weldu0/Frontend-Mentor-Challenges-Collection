@@ -1,0 +1,111 @@
+// - Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+// - Weights: 400
+
+// - Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+// - Weights: 700
+
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+$transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+$very-light-gray: hsl(0, 0%, 95%);
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  height: 100vh;
+  margin: 0;
+  
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2em;
+  margin-top: 28em;
+}
+
+.about-car {
+  // border: solid;
+  max-width: 20em;
+  padding: 3em;
+
+  .car {
+    // width: 3em;
+  }
+
+  h2 {
+    color: $very-light-gray;
+    text-transform: uppercase;
+    font-family: Big Shoulders Display;
+  }
+  
+  p {
+    font-family: Lexend Deca;
+    color: $transparent-white-paragraphs;
+    max-width: 15em;
+
+    
+  }
+
+  button {
+    padding: 1em;
+    border: none;
+    border-radius: 2em;
+    background-color: $very-light-gray;
+  }
+  button::before {
+    content: 'Learn More';
+  }
+
+
+}
+
+.about-car:nth-child(1) {
+  background-color: $bright-orange;
+  border-radius: 10px 10px 0 0;
+
+  button {
+    color: $bright-orange;
+  }
+}
+.about-car:nth-child(2) {
+  background-color: $dark-cyan;
+  
+  button {
+    color: $dark-cyan;
+  }
+}
+.about-car:nth-child(3) {
+  background-color: $very-dark-cyan;
+  border-radius: 0 0 10px 10px;
+  
+  button {
+    color: $very-dark-cyan;
+  }
+}
+
+
+@media screen and (min-width: 30em) {
+  main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 0;
+
+}
+
+.about-car:nth-child(1) {
+  background-color: $bright-orange;
+  border-radius: 10px 0 0 10px;
+}
+.about-car:nth-child(3) {
+  background-color: $very-dark-cyan;
+  border-radius: 0 10px 10px 0;
+}
+}
