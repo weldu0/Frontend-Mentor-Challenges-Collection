@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+    </style>
+  
+  <title>Frontend Mentor | Clipboard landing page</title>
+</head>
+<body class="font[400]">
+
+  <header class="flex flex-col justify-center items-center text-center mb-20">
+    <div class="relative w-screen h-[360px]"> <!-- Set a height for the parent div as needed -->
+      <picture>
+          <source media="(max-width: 23.4375em)" srcset="./images/bg-header-mobile.png">
+          <source media="(min-width: 24em)" srcset="./images/bg-header-desktop.png">
+          <img class="w-full h-full object-cover" src="./images/bg-header-desktop.png" alt="">
+      </picture>
+      <img class="absolute top-1/2 left-1/2 max-w-[8em] transform -translate-x-1/2 -translate-y-1/2" src="./images/logo.svg" alt="">
+  </div>
+    <section class="-mt-20 p-6 pt-0 flex flex-col">
+      <h1 class="text-[2.4rem] font-[600] text-[hsl(210,10%,33%)]">A history of everything you copy</h1>
+      <p class="mt-4 mb-6 text-[hsl(201,11%,66%)] text-[md] max-w-[39rem]">
+        Clipboard allows you to track and organize everything you 
+        copy. Instantly access your clipboard on all your devices.
+      </p>
+      <div class="flex flex-col lg:flex-row justify-center items-center">
+        <button class="bg-[hsl(171,66%,44%)] m-2 rounded-full border-b-2 border-[hsl(171,66%,24%)] p-3 text-[hsl(210,10%,333%)] font-500 shadow-lg shadow-[hsla(171,66%,44%,0.40)] px-6  ">Download for iOS</button>
+        <button class="bg-[hsl(233,100%,69%)] m-2 rounded-full border-b-2 border-[hsl(233,100%,39%)] p-3 text-[hsl(210,10%,333%)] font-500 shadow-md shadow-[hsl(233,100%,69%,0.40)] px-6  ">Download for Mac</button>
+      </div>
+    </section>
+  </header>
+
+  <section class=" m-4 flex flex-col justify-center items-center text-center lg:grid">
+    <div class="lg:flex lg:flex-col lg:items-center">
+      <h2 class="text-[2rem] font-[700] text-[hsl(210,10%,33%)]">Keep track of your snippets</h2>
+      <p class="mt-4 mb-6 text-[hsl(201,11%,66%)] text-[md] max-w-[39rem] lg:mb-[5rem]">
+        Clipboard instantly stores any item you copy in the cloud, 
+        meaning you can access your snippets immediately on all your 
+        devices. Our Mac and iOS apps will help you organize everything.
+      </p>
+    </div>
+
+    <div class="lg:flex lg:gap-20">
+      <img class="lg:-ml-[20em]" src="./images/image-computer.png" alt="">
+
+      <div class="mt-4 p-5 pt-10 lg:flex lg:flex-col lg:items-start ">
+        <h3 class="font-[600] text-[hsl(210,10%,33%)] text-2xl">Quick Search</h3>
+        <p class="mt-4 mb-6 text-[hsl(201,11%,66%)] text-md lg:max-w-[24rem] lg:text-start lg:mb-10">
+          Easily search your snippets by content, category, web address, application, and more.
+        </p>
+      
+        <h3 class="font-[600] text-[hsl(210,10%,33%)] text-2xl">iCloud Sync</h3>
+        <p class="mt-4 mb-6 text-[hsl(201,11%,66%)] text-md lg:max-w-[24rem] lg:text-start lg:mb-10">
+          Instantly saves and syncs snippets across all your devices.
+        </p>
+      
+        <h3 class="font-[600] text-[hsl(210,10%,33%)] text-2xl">Complete History</h3>
+        <p class="mt-4 mb-6 text-[hsl(201,11%,66%)] text-md lg:max-w-[24rem] lg:text-start lg:mb-10">Retrieve any snippets from the first moment you started using the app.</p>
+      
+      </div>
+    </div>
+  </section>
+
+
+  <section class=" m-4 flex flex-col justify-center items-center text-center">
+    <div class="mt-4 p-5 pt-10">
+      <h2 class="text-[2rem] font-[700] text-[hsl(210,10%,33%)] mt-10">Access Clipboard anywhere</h2>
+      <p class="mt-4 mb-6 text-[hsl(201,11%,66%)] text-[md] max-w-[42rem] lg:mb-[5rem]">
+        Whether you’re on the go, or at your computer, you can access all your Clipboard 
+        snippets in a few simple clicks.
+      </p>
+    </div>
+    <img src="./images/image-devices.png" alt="">
+    <h2 class="font-[600] text-[hsl(210,10%,33%)] lg:text-[2rem] lg:mt-10">Supercharge your workflow</h2>
+    <p class="text-[hsl(201,11%,66%)] text-md">We’ve got the tools to boost your productivity.</p>  
+    <div class="flex flex-col justify-center items-center text-center lg:flex lg:flex-row ">
+      <div class="mt-6 flex flex-col justify-center items-center text-center">
+        <img class="mb-10 mt-5" src="./images/icon-blacklist.svg" alt="">
+        <h3 class="font-[600] text-[hsl(210,10%,33%)] text-2xl">Create blacklists</h3>
+        <p class="text-[hsl(201,11%,66%)] text-md lg:max-w-[25rem]">Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+      </div>
+    
+      <div class="mt-6 flex flex-col justify-center items-center text-center">
+        <img class="mb-10 mt-5" src="./images/icon-text.svg" alt="">
+        <h3 class="font-[600] text-[hsl(210,10%,33%)] text-2xl">Plain text snippets</h3>
+        <p class="text-[hsl(201,11%,66%)] text-md lg:max-w-[25rem]">Remove unwanted formatting from copied text for a consistent look.</p>
+      </div>
+    
+      <div class="mt-6 flex flex-col justify-center items-center text-center">
+        <img class="mb-10 mt-5" src="./images/icon-preview.svg" alt="">
+        <h3 class="font-[600] text-[hsl(210,10%,33%)] text-2xl">Sneak preview</h3>
+        <p class="text-[hsl(201,11%,66%)] text-md lg:max-w-[25rem]">Quick preview of all snippets on your Clipboard for easy access.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="flex flex-col justify-center items-center gap-10 mt-20 mb-20 lg:flex-row lg:gap-[8rem] lg:m-[10rem]">
+    <img class="max-w-[6rem] lg:max-w-[10rem]" src="./images/logo-google.png" alt="">
+    <img class="max-w-[6rem] lg:max-w-[10rem]" src="./images/logo-ibm.png" alt="">
+    <img class="max-w-[6rem] lg:max-w-[10rem]" src="./images/logo-microsoft.png" alt="">
+    <img class="max-w-[6rem] lg:max-w-[10rem]" src="./images/logo-hp.png" alt="">
+    <img class="max-w-[6rem] lg:max-w-[10rem]" src="./images/logo-vector-graphics.png" alt="">
+  </section>
+
+
+  <section class="m-4 mb-[7rem] flex flex-col justify-center items-center">
+    <h2 class="font-[600] text-[hsl(210,10%,33%)] lg:text-[2rem]">Clipboard for iOS and Mac OS</h2>
+
+    <p class="mt-4 mb-6 text-[hsl(201,11%,66%)] text-[md] max-w-[42rem] text-center">
+      Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
+      and you’re ready to start adding to your clipboard.
+    </p>
+    <div class="flex flex-col lg:flex-row justify-center items-center">
+      <button class="bg-[hsl(171,66%,44%)] m-2 rounded-full border-b-2 border-[hsl(171,66%,24%)] p-3 text-[hsl(210,10%,333%)] font-500 shadow-lg shadow-[hsla(171,66%,44%,0.40)] px-6  ">Download for iOS</button>
+      <button class="bg-[hsl(233,100%,69%)] m-2 rounded-full border-b-2 border-[hsl(233,100%,39%)] p-3 text-[hsl(210,10%,333%)] font-500 shadow-md shadow-[hsl(233,100%,69%,0.40)] px-6  ">Download for Mac</button>
+    </div>
+  </section>
+
+  <footer class="flex flex-col justify-center items-center text-center p-10 bg-[hsl(201,11%,66%,0.100)] lg:flex-row lg:justify-around lg:items-start lg:text-start">
+    <img class="max-w-10 mb-[2em] lg:max-w-[4rem]" src="./images/logo.svg" alt="">
+    <nav class="flex flex-col gap-5">
+      <a class="text-[hsl(210,10%,33%)] hover:text-[hsl(171,66%,44%)]" aria-label="Navgate to FAQs page" href="">FAQs</a>
+      <a class="text-[hsl(210,10%,33%)] hover:text-[hsl(171,66%,44%)] mb-5" aria-label="Contact Us" href="">Contact Us</a>
+    </nav>
+
+    <nav class="flex flex-col gap-5">
+      <a class="text-[hsl(210,10%,33%)] hover:text-[hsl(171,66%,44%)]" aria-label="Read out privacy policy" href="">Privacy Policy</a>
+      <a class="text-[hsl(210,10%,33%)] hover:text-[hsl(171,66%,44%)]" aria-label="vist our Press Kit" href="">Press Kit</a>
+    </nav>
+
+    <nav class="flex flex-col">
+      <a class="text-[hsl(210,10%,33%)] hover:text-[hsl(171,66%,44%)] mt-5 mb-5 lg:mt-0" aria-label="installtion guide got " href="">Install Guide</a>
+    </nav>
+
+    <nav class="flex flex-row gap-10 mt-10">
+      <a class="text-[hsl(210,10%,33%)] hover:text-[hsl(171,66%,44%)]" aria-label="Our offical facebook page " href=""><i><img src="./images/icon-facebook.svg" alt=""></i></a>
+      <a class="text-[hsl(210,10%,33%)] hover:text-[hsl(171,66%,44%)]" aria-label="Our offical twitter page " href=""><i><img src="./images/icon-twitter.svg" alt=""></i></a>
+      <a class="text-[hsl(210,10%,33%)] hover:text-[hsl(171,66%,44%)]" aria-label="Our offical instagram page " href=""><i><img src="./images/icon-instagram.svg" alt=""></i></a>
+    </nav>
+  </footer>
+</body>
+</html>
