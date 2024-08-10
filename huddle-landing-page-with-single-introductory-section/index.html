@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins&display=swap');
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
+    body {
+      font-family: Open Sans;
+    }
+    h1 {
+      font-family: Poppins;
+    }
+  </style>
+</head>
+<body class="h-screen bg-[hsl(257,40%,49%)]">
+
+  <picture>
+    <source media="(max-width: 23.4375em)" srcset="./images/bg-mobile.svg">
+    <source media="(min-width: 24em)" srcset="./images/bg-desktop.svg">
+    <img class="z-0 absolute object" src="./images/bg-desktop.svg" alt="">
+  </picture>
+
+  <header role="banner" class="px-8 pt-10">
+    <img class="max-w-[6rem] lg:max-w-[12rem] lg:pl-10" src="./images/logo.svg" alt="">
+  </header>
+  <main class="flex flex-col justify-center items-center text-center text-white px-6 z-10 lg:flex-row lg:gap-20 lg:self-stretch lg:mt-20">
+    <img class="z-10 mt-[3rem] max-w-[95%] mb-20 lg:m-0" src="./images/illustration-mockups.svg" alt="">
+    <section class="z-10 flex flex-col justify-center items-center text-center text-white lg:text-start">
+      <h1 class="text-lg font-[700] max-w-[14rem] lg:self-start lg:text-[3rem] lg:max-w-[38rem] lg:leading-[1.325]">Build The Community Your Fans Will Love</h1>
+      <p class="text-[0.80rem] max-w-[15rem] lg:max-w-[23rem] lg:self-start">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+        Create connections with your users as you engage in genuine discussion. </p>
+      <button class="bg-white mt-3 mb-10 text-[hsl(257,40%,49%)] px-12 py-1 rounded-full shadow-lg lg:self-start">Register</button>
+    </section>
+  </main>
+
+  <footer class="flex flex-col justify-center items-center pb-6 lg:items-end lg:pr-10">
+    <nav>
+      <a href="" aria-label="Our facebook page"><i class="border-2 p-1 rounded-full text-white fa-brands fa-regular fa-facebook"></i></a>
+      <a href="" aria-label="Our facebook page"><i class="border-2 p-1 rounded-full text-white fa-brands fa-regular fa-twitter"></i></a>
+      <a href="" aria-label="Our facebook page"><i class="border-2 p-1 rounded-full text-white fa-brands fa-regular fa-instagram"></i></a>
+    </nav>
+  </footer>
+
+</body>
+</html>
