@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+        <title>Frontend Mentor | Single Price Grid Component</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+            :root {
+                --Cyan: hsl(179,62%,43%);
+                --Bright-Yellow: hsl(71,73%,54%);
+
+                --Light-Gray: hsl(204,43%,93%);
+                --Grayish-Blue: hsl(218,22%,67%);
+            }
+
+            /* color */
+            h1 {
+                color: var(--Cyan);
+            }
+
+            h2 {
+                color: var(--Bright-Yellow);
+            }
+
+            h3,button ,.price{
+                color: white !important;
+            }
+
+            li {
+                color: #e6e6e6 !important;
+            }
+            button {
+                background-color: var(--Bright-Yellow) !important;
+            }
+
+        </style>
+    </head>
+    <body class="flex flex-col justify-center items-center h-screen font-[16px] bg-[hsl(204,43%,93)] font['Karla']">
+        <main class="mx-6 shadow-lg lg:grid lg:grid-rows-2 lg:grid-col-2">
+            <section class="bg-white px-5 py-8 rounded-t-md lg:col-span-2 lg:p-10">
+                <h1 class="font-[700] mb-4 text-[1.1rem] ">Join our community</h1>
+                <h2 class="mb-4 font-[700]">30-day, hassle-free money back guarantee</h2>
+                <p class="text-[0.8rem] text-[hsl(218,22%,67%)] leading-[1.5rem] lg:max-w-[27rem]">
+                    Gain access to our full library of tutorials along with
+                    expert code reviews. Perfect for any developers who are
+                    serious about honing their skills.
+                </p>
+            </section>
+            <section class="bg-[hsl(179,62%,43%)] p-5 lg:col-span-1 lg:px-[2.5rem] lg:pr-[7.2rem]">
+                <h3 class="font-[700] mb-4 text-[1.1rem]">Monthly Subscription</h3>
+                <p class=" flex flex-row items-center price text-[2rem] font-[700]">&dollar;29 <span class="pl-4 text-[hsl(204,43%,93%)] font-[400] text-sm">per month</span></p>
+                <p class="text-[hsl(204,43%,93%)] font-[400] text-sm">Full access for less than &dollar;1 a day</p>
+                <button class="px-10 py-3 rounded-lg w-[100%] mt-10 shadow-lg font-[700]">Sign Up</button>
+            </section>
+            <section class="bg-[#4abebd] opacity-85 p-5 lg:col-span-1 lg:pr-[10rem]">
+                <h3 class="font-[700] mb-4 text-[1.1rem]">Why Us</h3>
+                <ul>
+                    <li class="font-[400] text-sm">Tutorials by industry experts</li>
+                    <li class="font-[400] text-sm">Peer &amp; expert code review</li>
+                    <li class="font-[400] text-sm">Coding exercises</li>
+                    <li class="font-[400] text-sm">Access to our GitHub repos</li>
+                    <li class="font-[400] text-sm">Community forum</li>
+                    <li class="font-[400] text-sm">Flashcard decks</li>
+                    <li class="font-[400] text-sm">New videos every week</li>
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>
