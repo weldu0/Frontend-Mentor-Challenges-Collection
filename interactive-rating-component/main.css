@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Overpass;
+  background-color: hsl(216, 12%, 8%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(213, 19%, 18%);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 20px;
+  max-width: 300px;
+}
+
+.stars {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 10px;
+}
+.stars img {
+  padding: 10px;
+  background-color: hsla(217, 12%, 63%, 0.114);
+  border-radius: 50%;
+  width: 15px;
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+}
+
+p {
+  color: hsl(217, 12%, 63%);
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+.star-number {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+button[class=rate] {
+  padding: 16px 8px;
+  background-color: hsla(217, 12%, 63%, 0.114);
+  border-radius: 50%;
+  border: none;
+  color: hsl(217, 12%, 63%);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+button[class=rate]:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(216, 12%, 8%);
+}
+
+button[type=submit] {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(216, 12%, 8%);
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+button[type=submit]:hover {
+  background-color: hsl(0, 0%, 100%);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.thank-you img {
+  width: 50%;
+}
+.thank-you p:nth-of-type(1) {
+  background-color: hsla(217, 12%, 63%, 0.114);
+  color: hsl(25, 97%, 53%);
+  padding: 6px 10px 3px 15px;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.thank-you h2 {
+  color: white;
+}
+.thank-you p:nth-of-type(2) {
+  max-width: 295px;
+}
+
+/*# sourceMappingURL=main.css.map */

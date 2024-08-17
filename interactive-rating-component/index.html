@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+<body>
+
+  <main class="app">
+    <div class="star-js stars"><img src="./images/icon-star.svg" alt=""></div>
+
+    <p class="display"></p>
+    <section>
+      <h1>How did we do?</h1>
+      <p>  
+        Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+        <div class="star-number">
+          <button class="rate">1</button>
+          <button class="rate">2</button>
+          <button class="rate">3</button>
+          <button class="rate">4</button>
+          <button class="rate">5</button>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+    </section>
+  </main>
+
+  <script>
+    // when user click any element that has the class "rate"
+    // store the value inside a var rateNum.rate
+    
+        const rateNum = { rate: '0' };
+        const ratingElement = document.querySelectorAll('.rate')
+        ratingElement.forEach(element => {
+            element.addEventListener('click', () => {
+              rateNum.rate = element.innerText;
+                addStar()
+                console.log(rateNum);
+            });
+        });
+
+        // add a star img to inside the container "star-js" 
+        // based on the value inside rateNum.rate.
+        function addStar() {
+          const starIcon = document.querySelector('.star-js');
+          const ratingElement = document.querySelector('.rate')
+
+          if (rateNum.rate === '1') {
+            console.log('1 star');
+            starIcon.innerHTML = `<img src="./images/icon-star.svg" alt="">`;
+
+          } else if (rateNum.rate === '2') {
+            starIcon.innerHTML = `
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            `;
+            console.log('2 star');
+          } else if (rateNum.rate === '3') {
+            starIcon.innerHTML = `
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            `;
+            console.log('3 star');
+          } else if (rateNum.rate === '4') {
+            starIcon.innerHTML = `
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            `;
+            console.log('4 star');
+          } else if (rateNum.rate === '5') {
+            starIcon.innerHTML = `
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            `;
+            console.log('5 star');
+          }
+            
+          
+          } 
+
+
+
+
+        const thankYouButton = document.querySelector('#submit');
+        const appContainer = document.querySelector('.app');
+
+        thankYouButton.addEventListener('click', function() {
+          if (rateNum.rate > 0) {
+            const message = `You selected ${rateNum.rate} out of 5`;
+            appContainer.innerHTML = `
+            <section class="thank-you">
+              <img src="./images/illustration-thank-you.svg" alt="">
+              <p>You selected ${rateNum.rate} out of 5</p>
+              <h2>Thank you!</h2>
+              <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+                don’t hesitate to get in touch!</p>
+              </section>
+            `;
+
+            console.log(message)
+          } else {
+            console.log('please click on a number to rate us')
+          }
+        });
+
+  </script>
+
+</body>
+</html>
