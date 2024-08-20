@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+    :root {
+
+      --Light-Cyan: hsl(193, 38%, 86%);
+      --Neon-Green: hsl(150, 100%, 66%);
+
+      --Grayish-Blue: hsl(217, 19%, 38%);
+      --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+      --Dark-Blue: hsl(218, 23%, 16%);
+    }
+  </style>
+</head>
+
+<body class="flex flex-col justify-center items-center h-lvh bg-[hsl(218,23%,16%)] font-['Manrope']">
+
+  <main id="app"
+    class="relative flex flex-col justify-center items-center text-center bg-[hsl(217,19%,24%)] max- p-5 max-w-[24rem] rounded-lg">
+    <div id="advice">
+      <div id="advice-id" class="text-[hsl(150,100%,66%);] uppercase tracking-wide text-[0.75rem] font-[800] mb-5">
+        advice #117</div>
+      <div id="advice">
+        <q class="text-[1.75rem] font-[800] leading-7 text-[hsl(193,38%,86%)] mb-5">It is easy to sit up and take
+          notice, what's difficult is getting up and taking action</q>
+      </div>
+    </div>
+    <div class="mt-4 mb-6">
+      <img class="w-screen" src="./images/pattern-divider-desktop.svg" alt="">
+    </div>
+    <div class="flex flex-col justify-center items-center">
+      <button id="dice" class="bg-[hsl(150,100%,66%)] p-3 rounded-full absolute  -bottom-5 hover:shadow-[0_0_20px] hover:shadow-[hsl(150,100%,66%)]"
+        aria-label="click to get another advice"><img class="w-[1rem]" aria-hidden="true" src="./images/icon-dice.svg"
+          alt=""></button>
+    </div>
+  </main>
+
+  <script>
+
+
+    dice.addEventListener('click', function () {
+      const adviceId = Math.floor(Math.random() * 250) + 1
+      console.log(adviceId)
+
+      const url = `https://api.adviceslip.com/advice/${adviceId}`
+      // const url = `https://api.adviceslip.com/advice/1`
+      const adviceElem = document.querySelector('#advice')
+      const dice = document.querySelector('#dice')
+      fetch(url)
+        .then(response => response.json())
+        .then(advice => {
+          adviceElem.innerHTML = `
+        <div id="advice-id" class="text-[hsl(150,100%,66%);] uppercase tracking-wide text-[0.75rem] font-[800] mb-5">advice #${advice.slip.id}</div>
+        <div id="advice">
+          <q class="text-[1.75rem] font-[800] leading-7 text-[hsl(193,38%,86%)] mb-5">${advice.slip.advice}</q>
+        </div>
+      `;
+          console.log(advice.slip.id, advice.slip.advice)
+        })
+    })
+
+
+  </script>
+</body>
+
+</html>
