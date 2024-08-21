@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="author" content="Weldu Tsegazgi">
+  <meta name="description" content="This is a solution for the 'Time tracking dashboard' challenges Frontend Mentor">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Time tracking dashboard</title>
+</head>
+<body class="bg-[hsl(226,43%,10%)] flex flex-col justify-center items-center mt-4 lg:h-lvh lg:mt-0">
+
+  <main  class="flex flex-col gap-6 md:grid md:grid-rows-2 md:grid-col-4">
+    <section class="md:row-start-1 md:row-end-3 md:self-stretch">
+      <div class="bg-[hsl(235,46%,20%)] rounded-lg pb-4 md:w-[12.5rem] h-full">
+        <div class="bg-[hsl(235,45%,61%)] p-4 px-6 rounded-lg flex flex-col items-center md:items-start md:pb-10 mb-4 md:flex-col">
+          <img class="w-[55px] border-2 rounded-full " src="./images/image-jeremy.png" alt="">
+          <h1 class="flex flex-col text-white ml-3 md:ml-0 md:text-[2rem] md:pt-[2.3rem] md:pb-[2.3rem]"><span class="text-[0.8rem] font-[300] -mb-1 text-black lg:mb-0">Report for</span>Jeremy Robson</h1>
+        </div>
+        <nav class="flex flex-row justify-between px-6 gap-2 md:flex-col">
+          <a class="text-sm text-[hsl(236,100%,87%);] hover:text-white" href="">Daily</a>
+          <!-- aria-selected="true" -->
+          <a class="text-sm text-white"  href="">Weekly</a>
+          <a class="text-sm text-[hsl(236,100%,87%);] hover:text-white" href="">Monthly</a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="md:row-start-1 md:col-start-2">
+      <div class="bg-[hsl(15,100%,70%)] bg-[url(./images/icon-work.svg)] bg-no-repeat bg-[top_right_0.8rem] pt-10 rounded-lg w-80 md:w-60">
+        <div class="bg-[hsl(235,46%,20%)] hover:bg-[hsl(235,45%,61%)] rounded-lg px-4 pb-4">
+            <div class="flex flex-row justify-between items-center text-white py-4 ">
+              <h2 class="font-[700] text-[1.125rem]">Work</h2>
+              <div role="button" aria-label="see more option" tabindex="0" class="focus:border-2 focus:p-2">
+                <svg aria-hidden="true" class="fill-[#BBC0FF] hover:fill-white hover:cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="21" height="5">
+                  <path  fill-rule="evenodd" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"/>
+                </svg>
+             </div>
+            </div>
+            <div class="flex flex-row justify-between text-white items-center gap-2 md:flex-col md:items-start">
+              <h2 class="text-[2rem] font-[300] md:text-[3rem]">32hrs</h2>
+              <p class="text-[1rem] text-[#BBC0FF] ">Last Week - 36hrs</p>
+            </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="md:row-start-1 md:col-start-3">
+      <div class="bg-[hsl(195,74%,62%)] bg-[url(./images/icon-play.svg)] bg-no-repeat bg-[top_right_0.8rem] pt-10 rounded-lg w-80 md:w-60">
+        <div class="bg-[hsl(235,46%,20%)] hover:bg-[hsl(235,45%,61%)] rounded-lg px-4 pb-4">
+            <div class="flex flex-row justify-between items-center text-white py-4 ">
+              <h2 class="font-[700] text-[1.125rem]">Play</h2>
+              <div role="button" aria-label="see more option" tabindex="0" class="focus:border-2 focus:p-2">
+                <svg aria-hidden="true" class="fill-[#BBC0FF] hover:fill-white hover:cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="21" height="5">
+                  <path  fill-rule="evenodd" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"/>
+                </svg>
+             </div>
+            </div>
+            <div class="flex flex-row justify-between text-white items-center gap-2 md:flex-col md:items-start">
+              <h2 class="text-[2rem] font-[300] md:text-[3rem]">10hrs</h2>
+              <p class="text-[1rem] text-[#BBC0FF] ">Last Week - 8hrs</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="md:row-start-3 md:col-start-3 lg:row-start-1 lg:col-start-4">
+      <div class="bg-[hsl(348,100%,68%)] bg-[url(./images/icon-study.svg)] bg-no-repeat bg-[top_right_0.8rem] pt-10 rounded-lg w-80 md:w-60">
+        <div class="bg-[hsl(235,46%,20%)] hover:bg-[hsl(235,45%,61%)] rounded-lg px-4 pb-4">
+            <div class="flex flex-row justify-between items-center text-white py-4 ">
+              <h2 class="font-[700] text-[1.125rem]">Study</h2>
+              <div role="button" aria-label="see more option" tabindex="0" class="focus:border-2 focus:p-2">
+                <svg aria-hidden="true" class="fill-[#BBC0FF] hover:fill-white hover:cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="21" height="5">
+                  <path  fill-rule="evenodd" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"/>
+                </svg>
+             </div>
+            </div>
+            <div class="flex flex-row justify-between text-white items-center gap-2 md:flex-col md:items-start">
+              <h2 class="text-[2rem] font-[300] md:text-[3rem]">4hrs</h2>
+              <p class="text-[1rem] text-[#BBC0FF] ">Last Week - 7hrs</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="md:row-start-2 md:col-start-2">
+      <div class="bg-[hsl(145,58%,55%)] bg-[url(./images/icon-exercise.svg)] bg-no-repeat bg-[top_right_0.8rem] pt-10 rounded-lg w-80 md:w-60">
+        <div class="bg-[hsl(235,46%,20%)] hover:bg-[hsl(235,45%,61%)] rounded-lg px-4 pb-4">
+            <div class="flex flex-row justify-between items-center text-white py-4 ">
+              <h2 class="font-[700] text-[1.125rem]">Study</h2>
+              <div role="button" aria-label="see more option" tabindex="0" class="focus:border-2 focus:p-2">
+                <svg aria-hidden="true" class="fill-[#BBC0FF] hover:fill-white hover:cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="21" height="5">
+                  <path  fill-rule="evenodd" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"/>
+                </svg>
+             </div>
+            </div>
+            <div class="flex flex-row justify-between text-white items-center gap-2 md:flex-col md:items-start">
+              <h2 class="text-[2rem] font-[300] md:text-[3rem]">4hrs</h2>
+              <p class="text-[1rem] text-[#BBC0FF] ">Last Week - 5hrs</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="md:row-start-2 md:col-start-3">
+      <div class="bg-[hsl(264,64%,52%)] bg-[url(./images/icon-social.svg)] bg-no-repeat bg-[top_right_0.8rem] pt-10 rounded-lg w-80 md:w-60">
+        <div class="bg-[hsl(235,46%,20%)] hover:bg-[hsl(235,45%,61%)] rounded-lg px-4 pb-4">
+            <div class="flex flex-row justify-between items-center text-white py-4 ">
+              <h2 class="font-[700] text-[1.125rem]">Social</h2>
+              <div role="button" aria-label="see more option" tabindex="0" class="focus:border-2 focus:p-2">
+                <svg aria-hidden="true" class="fill-[#BBC0FF] hover:fill-white hover:cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="21" height="5">
+                  <path  fill-rule="evenodd" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"/>
+                </svg>
+             </div>
+            </div>
+            <div class="flex flex-row justify-between text-white items-center gap-2 md:flex-col md:items-start">
+              <h2 class="text-[2rem] font-[300] md:text-[3rem]">5hrs</h2>
+              <p class="text-[1rem] text-[#BBC0FF] ">Last Week - 10hrs</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="md:row-start-3 md:col-start-2 lg:row-start-2 lg:col-start-4">
+      <div class="bg-[hsl(43,84%,65%)] bg-[url(./images/icon-self-care.svg)] bg-no-repeat bg-[top_right_0.8rem] pt-10 rounded-lg w-80 md:w-60">
+        <div class="bg-[hsl(235,46%,20%)] hover:bg-[hsl(235,45%,61%)] rounded-lg px-4 pb-4">
+            <div class="flex flex-row justify-between items-center text-white py-4 ">
+              <h2 class="font-[700] text-[1.125rem]">Self Care</h2>
+              <div role="button" aria-label="see more option" tabindex="0" class="focus:border-2 focus:p-2">
+                <svg aria-hidden="true" class="fill-[#BBC0FF] hover:fill-white hover:cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="21" height="5">
+                  <path  fill-rule="evenodd" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"/>
+                </svg>
+             </div>
+            </div>
+            <div class="flex flex-row justify-between text-white items-center gap-2 md:flex-col md:items-start">
+              <h2 class="text-[2rem] font-[300] md:text-[3rem]">2hrs</h2>
+              <p class="text-[1rem] text-[#BBC0FF] ">Last Week - 2hrs</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  
+  
+
+  
+  
+  
+
+  
+</body>
+</html>
