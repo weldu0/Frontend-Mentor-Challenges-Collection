@@ -1,99 +1,71 @@
-:root {
-    --white: hsl(0, 0%, 100%);
-    --lightgrey: hsl(212, 45%, 89%);
-    --grayish: hsl(220, 15%, 55%);
-    --darkblue: hsl(218, 44%, 22%);
 
-    --mobile: 375px;
-    --desktop: 1440px;
+* {
+    padding: 0;
+    margin: 0;
 }
 body {
     font-family: 'Outfit', sans-serif;
-    background-color: var(--lightgrey);
-    text-align: center;
+    background-color: #D5E1EF;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
 }
 
-p {
-    font-size: 15px;
-    width: 230px;
-    color: var(--grayish);
 
-}
-
-.bigtext {
-    font-size: 16px;
-    font-weight: bold;
-    width: 200px;
-    color: var(--darkblue);
-    margin-top: 10px;
-    margin-right: 20px;
-    margin-bottom: 15px;
-    margin-left: 30px; 
-}
-
-img {
-
-    height: 240px;
-    width: 240px;
-    border-radius: 8px;
-
-    margin: 0;
-
-}
 
 .card {
-    border: solid;
-    border-color: var(--white);
-    border-radius: 8px;
-    background-color: var(--white);
-    width: 230px;
-    margin: 0 auto;
-    margin-top: 100px;
-    
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-bottom: 15px;
-    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    background-color: #ffffff;
+    max-width: 320px;
+    padding: 16px 16px 40px 16px;
+    box-shadow: 0 25px 25px 0 hsl(0, 0%, 0%, 4.77%);
+    border-radius: 20px;
+
 
 }
 
-/* Styles for mobile */
-@media screen and (max-width: var(--mobile)) {
-    body {
-        padding: 10px;
-    }
-    
-    .card {
-        width: 90%;
-    }
+.qrcode-img img{
+    max-width: 100%;
+    border-radius: 10px;
 
-    p {
-        width: 100%;
-    }
-
-    .bigtext {
-        width: 100%;
-    }
-
-    img {
-        height: 100%;
-        width: 100%;
-    }
 }
 
-/* Styles for desktop */
-@media screen and (min-width: var(--desktop)) {
-    .card {
-        display: flex;
-        justify-content: space-around;
-    }
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
 
-    p, .bigtext {
-        width: auto;
-    }
+}
+h1,p {
+    all: unset;
+}
 
-    img {
-        height: 140px;
-        width: 140px;
-    }
+h1 {
+    color: #1F314F;
+    width: fit-content;
+    font-size: 22px;
+    max-width: 256px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 120%;
+}
+
+
+p {
+    color: #68778D;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    line-height: 140%;
+    text-align: center;
+    max-width: 256px;
+
+    
 }
